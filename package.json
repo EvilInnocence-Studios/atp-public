@@ -1,0 +1,17 @@
+{
+  "name": "www.evilinnocence.com",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "setup": "ts-node ./scripts/import.ts"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

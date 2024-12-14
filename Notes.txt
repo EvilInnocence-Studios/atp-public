@@ -1,0 +1,16 @@
+Gallery Arrangement Algorithm
+=============================
+Group images by size
+Compile list of slots by size for a large height
+while images are left
+    of the existing slot types, determine which one has the lowest y index
+    insert an image into the gallery list
+    remove that slot and any intersecting slots
+    if no slots of a type are left but there are images of that type left
+        extend the slot lists
+
+To Do
+=====
+import
+    - add media
+    - add related products (filter by BSP?)

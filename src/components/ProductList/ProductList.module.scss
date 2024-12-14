@@ -1,0 +1,11 @@
+@use "../../styles/globals.scss";
+
+.gallery {
+    position: relative;
+    width: 848px;
+    margin: auto;
+    img {
+        position: absolute;
+        border: solid 4px;
+    }
+}
