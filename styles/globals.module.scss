@@ -1,0 +1,32 @@
+$brand-primary: #4492ae;
+$brand-secondary: #8f9fb8;
+$brand-border: #4e5e6f;
+$brand-bg: #1a212b;
+$brand-bg-light: #2c333d;
+$brand-text: $brand-secondary;
+
+$warning: #f0ad4e;
+$changed: #333300;
+
+$border-radius: 4px;
+$border-radius-lg: 8px;
+
+$padding-lg: 32px;
+$padding: 16px;
+$padding-sm: 8px;
+$padding-xs: 4px;
+
+:export {
+    brandPrimary: $brand-primary;
+    brandSecondary: $brand-secondary;
+    brandBorder: $brand-border;
+    brandBg: $brand-bg;
+    brandBgLight: $brand-bg-light;
+    brandText: $brand-text;
+
+    borderRadius: $border-radius;
+    borderRadiusLg: $border-radius-lg;
+
+    padding: $padding;
+    paddingSm: $padding-sm;
+}

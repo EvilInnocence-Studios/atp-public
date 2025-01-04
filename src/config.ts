@@ -1,6 +1,28 @@
+import { IApiConfig } from "@core/lib/types";
+import { publicRoutes } from "@public/routes";
+import { localConfig } from "./config.local";
+import { storeRoutes } from "./store/lib/routes";
 
-export const config = {
+export const config = ():IApiConfig => ({
+    appName: "Store",
+    api: {
+        baseUrl: localConfig.api.baseUrl,
+    },
     gallery: {
         maxRowCount: 9999,
-    }
-}
+    },
+    social: {
+        twitter: "EvilInnocenceCG",
+        blueSky: "evilinnocence.bsky.social",
+        instagram: "evilinnocencecg",
+    },
+    modules: [
+        "uac", "common", "admin"
+    ],
+    menus: [
+    ],
+    routes: [
+        ...publicRoutes.public,
+        ...storeRoutes.public,
+    ]
+});

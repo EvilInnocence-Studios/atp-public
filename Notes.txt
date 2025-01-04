@@ -1,3 +1,40 @@
+Public Store To Do
+==================
+Shared
+    - Finish product list item
+        - Show price for non-BSP items
+        - link to product details page
+        - Restrict BSP items from being bought if not subscribed
+Homepage
+    - Add official hero images
+Store
+    - Product list page
+        - Filters
+        - search
+        - filtered product list
+    - Product details page
+Account
+    - Login page
+    - Sign up page
+    - Password reset page
+    - Order list
+Cart
+    - Cart page
+    - Checkout flow
+    - PayPal integration
+Misc
+    - SES/Mailchimp integration for transactional emails
+        - new Account
+        - password reset
+        - order confirmation
+        - BPS confirmation
+    - Forward old links for SEO
+    - CMS pages
+    - Footer links
+    - Analytics connection (custom analytics rather than Google?)
+    - PayPal integration to BPS subscriptions
+    - Contact us page
+
 Gallery Arrangement Algorithm
 =============================
 Group images by size

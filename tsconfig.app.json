@@ -20,7 +20,21 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@public/*": ["src/public/*"],
+      "@core/*": ["src/core/*"],
+      "@common/*": ["src/common/*"],
+      "@uac/*": ["src/uac/*"],
+      "@uac-shared/*": ["src/uac-shared/*"],
+      "@core-shared/*": ["src/core-shared/*"],
+      "@common-shared/*": ["src/common-shared/*"],
+      "@store/*": ["src/store/*"],
+      "@store-shared/*": ["src/store-shared/*"],
+      "@styles/*": ["styles/*"],
+      "@config": ["src/config"]
+    }
   },
   "include": ["src"]
 }
