@@ -4,7 +4,7 @@ import { localConfig } from "./config.local";
 import { storeRoutes } from "./store/lib/routes";
 
 export const config = ():IApiConfig => ({
-    appName: "Store",
+    appName: "EvilInnocence Store",
     api: {
         baseUrl: localConfig.api.baseUrl,
     },
