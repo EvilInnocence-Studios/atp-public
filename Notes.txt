@@ -1,3 +1,10 @@
+Andrea Notes
+============
+Homepage - New products should be one row with arrows
+put a template image for the banners in my products->z_sitedesign24 folder so i can start working on banners
+store - can you do a secondary condition on the price low->high cuz there are alot of things that have the same price. I'd prefer to also see the newest first i think if two items are the same price.
+Is this scaling my thumbnails up? is it possible to use upscale for this so they dont look crummy(or is my art just that bad?)
+
 Public Store To Do
 ==================
 Shared
