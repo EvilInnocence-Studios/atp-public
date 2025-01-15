@@ -21,6 +21,9 @@ export const config = ():IApiConfig => ({
     ],
     menus: [
     ],
+    paypal: {
+        clientId: localConfig.paypal.clientId,
+    },
     routes: [
         ...publicRoutes.public,
         ...storeRoutes.public,
