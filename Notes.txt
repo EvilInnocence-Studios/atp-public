@@ -1,46 +1,109 @@
-Andrea Notes
-============
-Homepage - New products should be one row with arrows
-put a template image for the banners in my products->z_sitedesign24 folder so i can start working on banners
-store - can you do a secondary condition on the price low->high cuz there are alot of things that have the same price. I'd prefer to also see the newest first i think if two items are the same price.
-Is this scaling my thumbnails up? is it possible to use upscale for this so they dont look crummy(or is my art just that bad?)
-
 Public Store To Do
-==================
-Shared
-    - Finish product list item
-        - Show price for non-BSP items
-        - link to product details page
-        - Restrict BSP items from being bought if not subscribed
+=================
 Homepage
-    - Add official hero images
-Store
-    - Product list page
-        - Filters
-        - search
-        - filtered product list
-    - Product details page
-Account
-    - Login page
-    - Sign up page
-    - Password reset page
-    - Order list
+    - Add official banners
+    - BUG: New product arrows not visible
+    - Tweak Mobile design
+Header/Footer
+    - Tweak mobile design
+    - Test social links
+    - Audit footer links
+Product List page
+    - Tweak mobile design
+    - Audit tags
+    - Add secondary sort (newest first) on price sorting
+Product Details page
+    - Add grouped product display
+    - Tweak mobile design
+    - Preload media images
 Cart
-    - Cart page
-    - Checkout flow
+    - Integrate PayPal
+    - Implement discounts
+    - Make sure BSP items can't be added/checkout out
+    - Order confirmation email design
+    - Tweak mobile design
+Account
+    - Profile page
+    - Add filters on file list
+    - Tweak mobile design
+BSP
     - PayPal integration
+    - BSP confirmation email
+CMS
+    - Port content
+    - Implement pages
+    - Tweak mobile design
 Misc
-    - SES/Mailchimp integration for transactional emails
-        - new Account
-        - password reset
-        - order confirmation
-        - BPS confirmation
+    - Implement contact us page
+    - Hookup analytics
+GoLive
+    - Investigate mass-scaling thumbnails
+    - Re-export/import product data
+    - Re-download/upload/scale media images
+    - Re-export/import customer data
+    - Setup final banners
+    - Setup final CMS content
     - Forward old links for SEO
-    - CMS pages
-    - Footer links
-    - Analytics connection (custom analytics rather than Google?)
-    - PayPal integration to BPS subscriptions
-    - Contact us page
+
+Public Store Testing
+====================
+Homepage
+    - Make sure banners work
+    - Make sure new products slider works
+    - Test Mobile design
+Header/Footer
+    - Test mobile design
+    - Test social links
+    - Test footer links
+    - Test search bar
+    - Test Login
+        - invalid password
+        - invalid user
+    - Test new Account
+        - duplicate email/username
+        - Validate email design
+    - Test reset password
+        - invalid user
+        - Validate email design
+    - Test forgot username
+        - invalid email
+        - Validate email design
+Product List page
+    - Test mobile design
+    - Test filtering
+    - Test pagination when filtering
+    - Test sorting
+    - Test item types (normal/free/BSP/grouped)
+Product Details page
+    - Add grouped product display
+    - Test mobile design
+    - Test action buttons (normal/free/BSP/grouped)
+    - Test media images
+Cart
+    - Test discounts
+    - Make sure BSP items can't be added/checkout out
+    - Test adding/removing/clearing Cart
+    - Test discounts
+    - Test checkout
+    - Validate confirmation email design
+    - Test mobile design
+Account
+    - Test Profile page
+    - Test order list/details
+    - Test wishlists
+    - Test file list
+    - Test mobile design
+BSP
+    - Test signing up
+    - Validate BSP confirmation email design
+CMS
+    - Test all pages
+    - Tweak mobile design
+Misc
+    - Test contact us page
+GoLive
+    - Test old links for SEO
+
 
 Gallery Arrangement Algorithm
 =============================
@@ -52,9 +115,3 @@ while images are left
     remove that slot and any intersecting slots
     if no slots of a type are left but there are images of that type left
         extend the slot lists
-
-To Do
-=====
-import
-    - add media
-    - add related products (filter by BSP?)
