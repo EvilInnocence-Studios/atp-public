@@ -2,41 +2,41 @@ Public Store To Do
 =================
 Homepage
     - Add official banners
-    - BUG: New product arrows not visible
-    - Tweak Mobile design
 Header/Footer
-    - Tweak mobile design
-    - Test social links
     - Audit footer links
 Product List page
-    - Tweak mobile design
     - Audit tags
-    - Add secondary sort (newest first) on price sorting
 Product Details page
     - Add grouped product display
-    - Tweak mobile design
     - Preload media images
+    - Don't show related products if there aren't any.
+    - Don't hide thumbnail if it is also the main image
+CartButton
+    - Handle brokered products
 Cart
-    - Integrate PayPal
     - Implement discounts
-    - Make sure BSP items can't be added/checkout out
+    - Make sure BSP items can't be added/checked out
+    - Make sure Brokered items can't be added/checked out
     - Order confirmation email design
-    - Tweak mobile design
+    - Update cart to redirect to proper order page
 Account
     - Profile page
+    - Add selected order id to URL
+    - Make sure pending orders don't show up
     - Add filters on file list
-    - Tweak mobile design
+    - Support subProduct files on order details and file list
 BSP
     - PayPal integration
     - BSP confirmation email
 CMS
     - Port content
     - Implement pages
-    - Tweak mobile design
 Misc
     - Implement contact us page
     - Hookup analytics
+    - Audit/update environment variables
 GoLive
+    - Tweak mobile design
     - Investigate mass-scaling thumbnails
     - Re-export/import product data
     - Re-download/upload/scale media images
@@ -44,6 +44,10 @@ GoLive
     - Setup final banners
     - Setup final CMS content
     - Forward old links for SEO
+    - Queues
+        - Missing thumbnails
+        - Missing main images
+        - Missing related products
 
 Public Store Testing
 ====================
@@ -73,15 +77,16 @@ Product List page
     - Test filtering
     - Test pagination when filtering
     - Test sorting
-    - Test item types (normal/free/BSP/grouped)
+    - Test item types (normal/free/BSP/grouped/brokered)
 Product Details page
     - Add grouped product display
     - Test mobile design
-    - Test action buttons (normal/free/BSP/grouped)
+    - Test action buttons (normal/free/BSP/grouped/brokered)
     - Test media images
 Cart
     - Test discounts
-    - Make sure BSP items can't be added/checkout out
+    - Make sure BSP items can't be added/checked out
+    - Make sure brokered items can't be added/checked out
     - Test adding/removing/clearing Cart
     - Test discounts
     - Test checkout
