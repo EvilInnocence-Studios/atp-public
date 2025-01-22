@@ -6,25 +6,10 @@ Header/Footer
     - Audit footer links
 Product List page
     - Audit tags
-Product Details page
-    - Add grouped product display
-    - Preload media images
-    - Don't show related products if there aren't any.
-    - Don't hide thumbnail if it is also the main image
-CartButton
-    - Handle brokered products
 Cart
     - Implement discounts
-    - Make sure BSP items can't be added/checked out
-    - Make sure Brokered items can't be added/checked out
-    - Order confirmation email design
-    - Update cart to redirect to proper order page
 Account
     - Profile page
-    - Add selected order id to URL
-    - Make sure pending orders don't show up
-    - Add filters on file list
-    - Support subProduct files on order details and file list
 BSP
     - PayPal integration
     - BSP confirmation email
@@ -35,8 +20,10 @@ Misc
     - Implement contact us page
     - Hookup analytics
     - Audit/update environment variables
+    - Make sure disabled products can't be seen on the public site
 GoLive
     - Tweak mobile design
+    - Audit brokered products
     - Investigate mass-scaling thumbnails
     - Re-export/import product data
     - Re-download/upload/scale media images
