@@ -16,6 +16,19 @@ $padding: 16px;
 $padding-sm: 8px;
 $padding-xs: 4px;
 
+$cms-width: 768px;
+
+$text-default: 16px;
+
+@mixin cmsPage {
+    max-width: $cms-width;
+    margin: auto;
+    font-size: $text-default;
+    h3 {
+        border-bottom: dashed 1px $brand-border;
+    }
+}
+
 :export {
     brandPrimary: $brand-primary;
     brandSecondary: $brand-secondary;
