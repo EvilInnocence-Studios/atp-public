@@ -11,16 +11,20 @@ Cart
 Account
     - Profile page
 BSP
-    - PayPal integration
     - BSP confirmation email
 CMS
     - Port content
-    - Implement pages
+        - Tutorials
+        - XD pages (main, XD, Morpher, Universal)
 Misc
     - Implement contact us page
     - Hookup analytics
     - Audit/update environment variables
     - Make sure disabled products can't be seen on the public site
+    - Admin Email templates
+        - user sign up
+        - order confirmation
+        - BSP subscribe
 GoLive
     - Tweak mobile design
     - Audit brokered products
