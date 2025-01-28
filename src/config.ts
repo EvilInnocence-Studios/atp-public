@@ -2,6 +2,7 @@ import { IApiConfig } from "@core/lib/types";
 import { publicRoutes } from "@public/routes";
 import { localConfig } from "./config.local";
 import { storeRoutes } from "./store/lib/routes";
+import {uacRoutes} from "@uac/lib/routes";
 
 export const config = ():IApiConfig => ({
     appName: "EvilInnocence Store",
@@ -28,5 +29,6 @@ export const config = ():IApiConfig => ({
     routes: [
         ...publicRoutes.public,
         ...storeRoutes.public,
+        ...uacRoutes.public,
     ]
 });

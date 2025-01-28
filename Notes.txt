@@ -2,6 +2,10 @@ Public Store To Do
 =================
 Homepage
     - Add official banners
+    - Add support for two buttons on banners
+    - Reduce text size on new product list items
+    - Tweak padding around new products header
+    - Tweak alignment on footer links
 Header/Footer
     - Audit footer links
 Product List page
@@ -17,7 +21,11 @@ CMS
         - Tutorials
         - XD pages (main, XD, Morpher, Universal)
 Misc
-    - Implement contact us page
+    - Scroll to top on link click
+    - Remove buttons on media switcher when there is only one image
+    - Fix preloading images on media switcher
+    - Keep other filters when changing search text
+    - Implement profile change password form
     - Hookup analytics
     - Audit/update environment variables
     - Make sure disabled products can't be seen on the public site

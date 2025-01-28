@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "clear && vite --host",
-    "build": "tsc -b && vite build",
+    "deploy": "clear && yarn build && yarn deploy-only && yarn refresh",
+    "build": "tsc && vite build",
+    "deploy-only": "aws s3 sync ./dist s3://react.evilinnocence.com --acl public-read",
+    "refresh": "aws cloudfront create-invalidation --distribution-id E3K5Y2IN95ZTVV --paths \"/*\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "status": "node ./src/core-shared/scripts/status.mjs",
