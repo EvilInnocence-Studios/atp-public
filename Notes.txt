@@ -1,19 +1,11 @@
-Public Store To Do
-=================
+Coding ToDo
+===========
 Homepage
-    - Add official banners
     - Add support for two buttons on banners
-    - Reduce text size on new product list items
-    - Tweak padding around new products header
     - Tweak alignment on footer links
-Header/Footer
-    - Audit footer links
-Product List page
-    - Audit tags
 Cart
     - Implement discounts
-Account
-    - Profile page
+        - Flat % off for now
 BSP
     - BSP confirmation email
 CMS
@@ -22,12 +14,9 @@ CMS
         - XD pages (main, XD, Morpher, Universal)
 Misc
     - limit image size in new products component
-    - replace placeholder image with spinner
+    - after login, reload page
     - Scroll to top on link click
-    - Remove buttons on media switcher when there is only one image
-    - Fix preloading images on media switcher
     - Keep other filters when changing search text
-    - Implement profile change password form
     - Hookup analytics
     - Audit/update environment variables
     - Make sure disabled products can't be seen on the public site
@@ -35,20 +24,24 @@ Misc
         - user sign up
         - order confirmation
         - BSP subscribe
-GoLive
     - Tweak mobile design
-    - Audit brokered products
     - Investigate mass-scaling thumbnails
+
+Public Store To Do
+=================
+Homepage
+    - Add official banners
+Header/Footer
+    - Audit footer links
+Product List page
+    - Audit tags
+GoLive
+    - Audit brokered products
     - Re-export/import product data
     - Re-download/upload/scale media images
     - Re-export/import customer data
-    - Setup final banners
     - Setup final CMS content
     - Forward old links for SEO
-    - Queues
-        - Missing thumbnails
-        - Missing main images
-        - Missing related products
 
 Public Store Testing
 ====================
