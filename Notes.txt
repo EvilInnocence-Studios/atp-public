@@ -21,6 +21,8 @@ CMS
         - Tutorials
         - XD pages (main, XD, Morpher, Universal)
 Misc
+    - limit image size in new products component
+    - replace placeholder image with spinner
     - Scroll to top on link click
     - Remove buttons on media switcher when there is only one image
     - Fix preloading images on media switcher
