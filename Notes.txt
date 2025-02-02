@@ -1,9 +1,5 @@
 Coding ToDo
 ===========
-Cart
-    - Implement discounts
-        - Flat % off for now
-        - BSP member discount
 BSP
     - BSP confirmation email
 CMS
