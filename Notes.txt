@@ -1,5 +1,7 @@
 Coding ToDo
 ===========
+ProductListItem
+    - limit size so they don't stretch.
 BSP
     - BSP confirmation email
 CMS
