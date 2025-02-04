@@ -1,7 +1,5 @@
 Coding ToDo
 ===========
-ProductListItem
-    - limit size so they don't stretch.
 BSP
     - BSP confirmation email
 CMS
@@ -9,6 +7,7 @@ CMS
         - Tutorials
         - XD pages (main, XD, Morpher, Universal)
 Misc
+    - Tweak mobile design
     - after login, reload page
     - Keep other filters when changing search text
     - Hookup analytics
@@ -18,8 +17,6 @@ Misc
         - user sign up
         - order confirmation
         - BSP subscribe
-    - Tweak mobile design
-    - Investigate mass-scaling thumbnails
 
 Public Store To Do
 =================
