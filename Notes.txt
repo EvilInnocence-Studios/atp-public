@@ -8,8 +8,9 @@ CMS
         - XD pages (main, XD, Morpher, Universal)
 Misc
     - Tweak mobile design
+        - login form
+        - cms pages
     - after login, reload page
-    - Keep other filters when changing search text
     - Hookup analytics
     - Audit/update environment variables
     - Make sure disabled products can't be seen on the public site

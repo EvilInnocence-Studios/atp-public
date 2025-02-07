@@ -9,6 +9,9 @@ export const config = ():IApiConfig => ({
     api: {
         baseUrl: localConfig.api.baseUrl,
     },
+    analytics: {
+        google: "G-G7SVPC1M02",
+    },
     gallery: {
         maxRowCount: 9999,
     },
