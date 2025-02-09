@@ -11,7 +11,6 @@ Misc
         - login form
         - cms pages
     - after login, reload page
-    - Hookup analytics
     - Audit/update environment variables
     - Make sure disabled products can't be seen on the public site
     - Admin Email templates
@@ -34,6 +33,7 @@ GoLive
     - Re-export/import customer data
     - Setup final CMS content
     - Forward old links for SEO
+    - Turn off analytics debug
 
 Public Store Testing
 ====================
