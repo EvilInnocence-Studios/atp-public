@@ -7,6 +7,9 @@ CMS
         - Tutorials
         - XD pages (main, XD, Morpher, Universal)
 Misc
+    - BSP page
+        - write content
+        - make signup buttons more streamlined
     - Tweak mobile design
         - login form
         - cms pages
@@ -28,8 +31,6 @@ Product List page
     - Audit tags
 GoLive
     - Audit brokered products
-    - Re-export/import product data
-    - Re-download/upload/scale media images
     - Re-export/import customer data
     - Setup final CMS content
     - Forward old links for SEO
