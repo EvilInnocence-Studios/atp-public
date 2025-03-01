@@ -16,16 +16,40 @@ $padding: 16px;
 $padding-sm: 8px;
 $padding-xs: 4px;
 
-$cms-width: 768px;
+$cms-width: 1024px;
 
 $text-default: 16px;
 
 @mixin cmsPage {
     max-width: $cms-width;
-    margin: auto;
+    margin: $padding auto;
     font-size: $text-default;
+    background-color: $brand-bg-light;
+    padding: $padding;
     h3 {
         border-bottom: dashed 1px $brand-border;
+    }
+    li {
+        margin-top: $padding-sm;
+    }
+    img {
+        display: block;
+        margin: $padding-sm auto;
+        max-width: 100%;
+    }
+    iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    p {
+        margin-bottom: $padding;
+    }
+}
+
+@mixin infoBlock {
+    div, h2 {
+        max-width: $cms-width;
+        margin: auto;
     }
 }
 

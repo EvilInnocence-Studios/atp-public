@@ -1,40 +1,79 @@
+Tag Revamp
+=============
+
+Category
+============
+Regular store
+Bsp
+Free
+brokered
+bundles
+
+Featured/Top selling Figures
+============================
+V4
+M4
+Cookie
+Dawn
+Genesis 3
+Gensis 8
+Genesis 9
+Chip
+Dusk
+
+Genres/Theme:
+================
+Christmas
+Valentines
+Halloween
+Fantasy
+Sci-Fi
+Modern
+Horror
+Historical
+Nature (Digital Alchemy)
+
+
+Item type:
+===================
+Set/Prop/environment
+Clothing
+Poses
+Texture
+XD
+Original Figures
+Utilities
+
+
+
+
 Coding ToDo
 ===========
-BSP
-    - BSP confirmation email
-CMS
-    - Port content
-        - Tutorials
-        - XD pages (main, XD, Morpher, Universal)
+Product page
+    - grouped products should not show disabled products
+        - fix in admin: removed disabled products
 Misc
     - BSP page
-        - write content
-        - make signup buttons more streamlined
-    - Tweak mobile design
-        - login form
-        - cms pages
+        - redesign page
     - after login, reload page
-    - Audit/update environment variables
-    - Make sure disabled products can't be seen on the public site
     - Admin Email templates
-        - user sign up
         - order confirmation
-        - BSP subscribe
 
 Public Store To Do
 =================
 Homepage
-    - Add official banners
+    - Finalize official banners
 Header/Footer
-    - Audit footer links
+    - Update footer links
 Product List page
     - Audit tags
 GoLive
     - Audit brokered products
-    - Re-export/import customer data
-    - Setup final CMS content
+    - Audit grouped products, make sure they include everything
     - Forward old links for SEO
+    - Setup live PayPal app ids
     - Turn off analytics debug
+    - Re-export/import customer data
 
 Public Store Testing
 ====================
@@ -59,14 +98,20 @@ Header/Footer
     - Test forgot username
         - invalid email
         - Validate email design
+    - Test cart button link and product count
 Product List page
     - Test mobile design
     - Test filtering
+        - Add filter
+        - Remove filter
+        - Show more/less
+        - Clear all
+        - Clear search
     - Test pagination when filtering
     - Test sorting
     - Test item types (normal/free/BSP/grouped/brokered)
 Product Details page
-    - Add grouped product display
+    - Test item types (normal/free/BSP/grouped/brokered)
     - Test mobile design
     - Test action buttons (normal/free/BSP/grouped/brokered)
     - Test media images
@@ -90,7 +135,7 @@ BSP
     - Validate BSP confirmation email design
 CMS
     - Test all pages
-    - Tweak mobile design
+    - Test mobile design
 Misc
     - Test contact us page
 GoLive
