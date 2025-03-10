@@ -1,77 +1,29 @@
-Tag Revamp
-=============
-
-Category
-============
-Regular store
-Bsp
-Free
-brokered
-bundles
-
-Featured/Top selling Figures
-============================
-V4
-M4
-Cookie
-Dawn
-Genesis 3
-Gensis 8
-Genesis 9
-Chip
-Dusk
-
-Genres/Theme:
-================
-Christmas
-Valentines
-Halloween
-Fantasy
-Sci-Fi
-Modern
-Horror
-Historical
-Nature (Digital Alchemy)
-
-
-Item type:
-===================
-Set/Prop/environment
-Clothing
-Poses
-Texture
-XD
-Original Figures
-Utilities
-
-
-
-
 Coding ToDo
 ===========
 Product page
     - grouped products should not show disabled products
         - fix in admin: removed disabled products
 Misc
-    - BSP page
-        - redesign page
+    - fix cache endpoints, include base URL as well as *
+    - replace image for banners
+
+    - history scroll to top: see if we can remember scroll history
+    - audit site-wide text sizes
+    - product scroller wrap around
+    - BSP banner in header
+
+    - fix tag sorting on live admin site
+
+    - add alpha-sort button on tag manager
     - after login, reload page
-    - Admin Email templates
-        - order confirmation
 
 Public Store To Do
 =================
 Homepage
     - Finalize official banners
-Header/Footer
-    - Update footer links
-Product List page
-    - Audit tags
 GoLive
     - Audit brokered products
-    - Audit grouped products, make sure they include everything
-    - Forward old links for SEO
-    - Setup live PayPal app ids
+    - Audit grouped products, make sure they include everything and don't include disabled products
     - Turn off analytics debug
     - Re-export/import customer data
 

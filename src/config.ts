@@ -18,6 +18,7 @@ export const config = ():IApiConfig => ({
         maxRowCount: 9999,
     },
     social: {
+        facebook: "DarkwyndChronicles",
         twitter: "EvilInnocenceCG",
         blueSky: "evilinnocence.bsky.social",
         instagram: "evilinnocencecg",
