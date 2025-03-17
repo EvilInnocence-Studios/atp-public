@@ -4,8 +4,10 @@ Product page
     - grouped products should not show disabled products
         - fix in admin: removed disabled products
 Misc
-    - fix cache endpoints, include base URL as well as *
-    - replace image for banners
+    - fix banner replace refreshs
+
+    - refactor SEO redirects to not use KV store
+        - monitor to see if costs are too much
 
     - history scroll to top: see if we can remember scroll history
     - audit site-wide text sizes
