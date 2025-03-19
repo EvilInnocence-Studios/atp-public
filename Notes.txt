@@ -5,6 +5,7 @@ Product page
         - fix in admin: removed disabled products
 Misc
     - fix banner replace refreshs
+    - fix cache invalidation buttons
 
     - refactor SEO redirects to not use KV store
         - monitor to see if costs are too much
@@ -18,6 +19,7 @@ Misc
 
     - add alpha-sort button on tag manager
     - after login, reload page
+    - refresh when removing subproducts
 
 Public Store To Do
 =================
@@ -26,6 +28,8 @@ Homepage
 GoLive
     - Audit brokered products
     - Audit grouped products, make sure they include everything and don't include disabled products
+        - 3d universe girls needs subproducts
+        - 3d universe guys needs subproducts
     - Turn off analytics debug
     - Re-export/import customer data
 

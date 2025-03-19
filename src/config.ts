@@ -12,7 +12,7 @@ export const config = ():IApiConfig => ({
     analytics: {
         google: "G-G7SVPC1M02",
         track: "https://wj0w5ct2yb.execute-api.us-east-1.amazonaws.com/production/analytics/pageview",
-        debug: true,
+        debug: false,
     },
     gallery: {
         maxRowCount: 9999,
