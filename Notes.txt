@@ -1,8 +1,5 @@
 Coding ToDo
 ===========
-Product page
-    - grouped products should not show disabled products
-        - fix in admin: removed disabled products
 Misc
     - fix banner replace refreshs
     - fix cache invalidation buttons
@@ -30,7 +27,12 @@ GoLive
     - Audit grouped products, make sure they include everything and don't include disabled products
         - 3d universe girls needs subproducts
         - 3d universe guys needs subproducts
-    - Turn off analytics debug
+        - daz gen 3 females needs subproducts
+        - daz gen 3 males needs subproducts
+        - koshini/ichiro needs subproducts
+        - nursoda females needs subproducts
+        - storms bundle needs subproducts
+        - v4 bundle needs subproducts
     - Re-export/import customer data
 
 Public Store Testing
