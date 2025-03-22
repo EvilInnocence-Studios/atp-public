@@ -1,3 +1,14 @@
+Release ToDo
+============
+Coding/Bugs
+    - close BSP subscribe modal when subscription starts
+    - Add more info on BSP cancel page
+    - order confirmation email should show sale prices
+Update role for BSP subscribers
+Update DNS records
+Add forwards for root domain
+Add SSL certificate for root domain on server
+
 Coding ToDo
 ===========
 Misc
