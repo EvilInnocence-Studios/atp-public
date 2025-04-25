@@ -2,12 +2,14 @@ Release ToDo
 ============
 Coding/Bugs
     - close BSP subscribe modal when subscription starts
-    - Add more info on BSP cancel page
     - order confirmation email should show sale prices
-Update role for BSP subscribers
-Update DNS records
-Add forwards for root domain
-Add SSL certificate for root domain on server
+
+Phase 2
+=======
+Product
+    - date picker has an off-by-one error when selecting date (time zone issue?)
+Make related product search better
+    - need sort/filtering options
 
 Coding ToDo
 ===========
@@ -28,6 +30,57 @@ Misc
     - add alpha-sort button on tag manager
     - after login, reload page
     - refresh when removing subproducts
+
+Generalizing ToDo
+=================
+Feature toggles for features
+api project
+    - make settings endpoints in common
+    - make separate subscription module
+    - store
+        - discounts
+            - remove default data
+        - move cart endpoints/handlers/services to cart dir
+    - uac
+        - move permission insertion to individual modules
+        - move wishlist endpoints to store module
+        - move subscription endpoints to subscription module
+ui projects
+    - separate <module>-ui modules into <module>-ui-<public|admin|shared> modules
+    - make settings manager
+    - make subscription modules
+    - add permission checks around all components
+    - move core service definitions into app config
+    - move BSP info page and signup form to public module
+    - move store MyAccount component into uac module and move the tab definitions into the app config
+    - move store ProductScroller component into common module and make it configurable
+    - move store Queue component into common module and make it configurable
+    - move store SubscriptionEditor component into subscription module
+
+Sites Server Locations
+============================
+EI Server
+	amstronaut.com
+        - update ambergell.com DNS records
+        - setup SSL
+    darkwynd
+        - issue with @ resolution
+        - waiting on dns propagation
+	
+Testbed
+	api.darkwyndchronicles.com
+    api.evilinnocence.com
+    amstronaut.com, ambergell.com
+        - pending
+    wholesomehorizons.net
+        - pending
+	testbed.wittrock.us
+	
+Oracle
+	minecraft.wittrock.us
+        - Look into backing up server and hosting locally.
+
+
 
 Public Store To Do
 =================
