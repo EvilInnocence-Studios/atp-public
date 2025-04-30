@@ -1,18 +1,13 @@
-Release ToDo
-============
+Phase 2
+=======
 Coding/Bugs
     - close BSP subscribe modal when subscription starts
     - order confirmation email should show sale prices
-
-Phase 2
-=======
+    - product scroller wrap around
 Product
     - date picker has an off-by-one error when selecting date (time zone issue?)
-Make related product search better
-    - need sort/filtering options
-
-Coding ToDo
-===========
+    - convert spaces to dashes in product url
+    - multiple product media upload
 Misc
     - fix banner replace refreshs
     - fix cache invalidation buttons
@@ -21,8 +16,6 @@ Misc
         - monitor to see if costs are too much
 
     - history scroll to top: see if we can remember scroll history
-    - audit site-wide text sizes
-    - product scroller wrap around
     - BSP banner in header
 
     - fix tag sorting on live admin site
@@ -31,31 +24,74 @@ Misc
     - after login, reload page
     - refresh when removing subproducts
 
-Generalizing ToDo
+API Generalizing ToDo
 =================
-Feature toggles for features
-api project
-    - make settings endpoints in common
-    - make separate subscription module
-    - store
-        - discounts
-            - remove default data
-        - move cart endpoints/handlers/services to cart dir
-    - uac
-        - move permission insertion to individual modules
-        - move wishlist endpoints to store module
-        - move subscription endpoints to subscription module
-ui projects
+config - move all the things into settings
+package.json
+    - move credential info into config
+    - change project name
+_data - remove
+scripts - audit and/or remove import scripts
+general
+    - make subscription module
+common/migrations
+    - remove EI site data
+    - handle common permissions
+core/paypal - get client id from settings
+core/s3Uploads - move bucket and region to settings
+core/sendEmail - get region from settings
+store/orderConfirmation - move copy template into settings
+store/migrations - audit all migrations, remove EI site data, and handle store permissions
+store/order/service
+    - move cart endpoints to cart dir
+    - move subscription stuff to subscription module and include via plugins
+    - move order confirmation email subject into settings
+uac/components - move all email copy templates into settings
+uac/migrations - move all permission handling to specific modules
+uar/user
+    - move wishlist endpoints to store module
+    - move subscription endpoints to subscription module
+    - service: move email config to settings
+init-db - make one init migration
+
+UI Code Generalizing Details
+=============================
+General
     - separate <module>-ui modules into <module>-ui-<public|admin|shared> modules
-    - make settings manager
     - make subscription modules
     - add permission checks around all components
     - move core service definitions into app config
-    - move BSP info page and signup form to public module
-    - move store MyAccount component into uac module and move the tab definitions into the app config
-    - move store ProductScroller component into common module and make it configurable
-    - move store Queue component into common module and make it configurable
-    - move store SubscriptionEditor component into subscription module
+    - add feature toggles in settings
+package.json
+    - change project name
+core/NotFoundPage - img and copy
+core/usePaginator - page size options to settings
+store/AddToCartBtn
+    - separate subscription stuff
+    - move brokered product config to settings
+store/BackstagePass - move to public module
+store/BSPFaq - move to public module
+store/BSPSignupForm
+    - move to subscription moduile
+    - move plan config to database
+store/MyAccount - move into uac module and move the tab definitions into the app config
+store/ProductEditor - move subscription fields to subscription module and include via plugins
+store/ProductMediaEditor - get imgHost from settings
+store/ProductScroller - move to common module and make it configurable
+store/Queue - move to common module and make it configurable
+store/SubscriptionEditor - move to subscription module
+store/product/columns
+    - move subscription column to subscription module and include via plugins
+    - move brokered products config to settings
+store/routes - move BSP route to public module
+store/useProductList - move default SKU to settings
+store/useSearch - move defaults to settings
+uac/LoginForm
+    - move logo alt to settings
+    - remove new site alert
+config.local - move api host into .env
+
+
 
 Sites Server Locations
 ============================
@@ -79,92 +115,6 @@ Testbed
 Oracle
 	minecraft.wittrock.us
         - Look into backing up server and hosting locally.
-
-
-
-Public Store To Do
-=================
-Homepage
-    - Finalize official banners
-GoLive
-    - Audit brokered products
-    - Audit grouped products, make sure they include everything and don't include disabled products
-        - 3d universe girls needs subproducts
-        - 3d universe guys needs subproducts
-        - daz gen 3 females needs subproducts
-        - daz gen 3 males needs subproducts
-        - koshini/ichiro needs subproducts
-        - nursoda females needs subproducts
-        - storms bundle needs subproducts
-        - v4 bundle needs subproducts
-    - Re-export/import customer data
-
-Public Store Testing
-====================
-Homepage
-    - Make sure banners work
-    - Make sure new products slider works
-    - Test Mobile design
-Header/Footer
-    - Test mobile design
-    - Test social links
-    - Test footer links
-    - Test search bar
-    - Test Login
-        - invalid password
-        - invalid user
-    - Test new Account
-        - duplicate email/username
-        - Validate email design
-    - Test reset password
-        - invalid user
-        - Validate email design
-    - Test forgot username
-        - invalid email
-        - Validate email design
-    - Test cart button link and product count
-Product List page
-    - Test mobile design
-    - Test filtering
-        - Add filter
-        - Remove filter
-        - Show more/less
-        - Clear all
-        - Clear search
-    - Test pagination when filtering
-    - Test sorting
-    - Test item types (normal/free/BSP/grouped/brokered)
-Product Details page
-    - Test item types (normal/free/BSP/grouped/brokered)
-    - Test mobile design
-    - Test action buttons (normal/free/BSP/grouped/brokered)
-    - Test media images
-Cart
-    - Test discounts
-    - Make sure BSP items can't be added/checked out
-    - Make sure brokered items can't be added/checked out
-    - Test adding/removing/clearing Cart
-    - Test discounts
-    - Test checkout
-    - Validate confirmation email design
-    - Test mobile design
-Account
-    - Test Profile page
-    - Test order list/details
-    - Test wishlists
-    - Test file list
-    - Test mobile design
-BSP
-    - Test signing up
-    - Validate BSP confirmation email design
-CMS
-    - Test all pages
-    - Test mobile design
-Misc
-    - Test contact us page
-GoLive
-    - Test old links for SEO
-
 
 Gallery Arrangement Algorithm
 =============================
