@@ -57,7 +57,6 @@ init-db - make one init migration
 UI Code Generalizing Details
 =============================
 General
-    - separate <module>-ui modules into <module>-ui-<public|admin|shared> modules
     - make subscription modules
     - add permission checks around all components
     - move core service definitions into app config
