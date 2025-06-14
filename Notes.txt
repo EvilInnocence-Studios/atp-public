@@ -60,12 +60,9 @@ General
     - make subscription modules
     - add permission checks around all components
     - add feature toggles in settings
-core/usePaginator - page size options to settings
 store/AddToCartBtn
     - separate subscription stuff
     - move brokered product config to settings
-store/BackstagePass - move to public module
-store/BSPFaq - move to public module
 store/BSPSignupForm
     - move to subscription module
     - move plan config to database
