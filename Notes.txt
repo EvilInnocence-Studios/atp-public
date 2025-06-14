@@ -70,7 +70,6 @@ store/MyAccount - move into uac module and move the tab definitions into the app
 store/ProductEditor - move subscription fields to subscription module and include via plugins
 store/ProductMediaEditor - get imgHost from settings
 store/ProductScroller - move to common module and make it configurable
-store/Queue - move to common module and make it configurable
 store/SubscriptionEditor - move to subscription module
 store/product/columns
     - move subscription column to subscription module and include via plugins
