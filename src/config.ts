@@ -1,10 +1,10 @@
-import { IApiConfig } from "@core/lib/types";
+import { IConfig } from "@core/lib/types";
 import { publicRoutes } from "@public/routes";
 import { localConfig } from "./config.local";
 import { storeRoutes } from "./store/lib/routes";
 import {uacRoutes} from "@uac/lib/routes";
 
-export const config = ():IApiConfig => ({
+export const config = ():IConfig => ({
     api: {
         baseUrl: localConfig.api.baseUrl,
     },

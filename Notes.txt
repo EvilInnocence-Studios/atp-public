@@ -71,7 +71,7 @@ store/AddToCartBtn
 store/BackstagePass - move to public module
 store/BSPFaq - move to public module
 store/BSPSignupForm
-    - move to subscription moduile
+    - move to subscription module
     - move plan config to database
 store/MyAccount - move into uac module and move the tab definitions into the app config
 store/ProductEditor - move subscription fields to subscription module and include via plugins
