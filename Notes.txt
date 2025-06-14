@@ -59,11 +59,7 @@ UI Code Generalizing Details
 General
     - make subscription modules
     - add permission checks around all components
-    - move core service definitions into app config
     - add feature toggles in settings
-package.json
-    - change project name
-core/NotFoundPage - img and copy
 core/usePaginator - page size options to settings
 store/AddToCartBtn
     - separate subscription stuff
