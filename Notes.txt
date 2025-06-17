@@ -48,7 +48,7 @@ store/order/service
     - move order confirmation email subject into settings
 uac/components - move all email copy templates into settings
 uac/migrations - move all permission handling to specific modules
-uar/user
+uac/user
     - move wishlist endpoints to store module
     - move subscription endpoints to subscription module
     - service: move email config to settings
