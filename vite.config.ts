@@ -17,6 +17,8 @@ export default defineConfig({
       '@common-shared': path.resolve(__dirname, 'src/common-shared'),
       '@store': path.resolve(__dirname, 'src/store'),
       '@store-shared': path.resolve(__dirname, 'src/store-shared'),
+      '@subscription': path.resolve(__dirname, 'src/subscription'),
+      '@subscription-shared': path.resolve(__dirname, 'src/subscription-shared'),
       '@styles': path.resolve(__dirname, 'styles'),
       '@config': path.resolve(__dirname, 'src/config'),
     },

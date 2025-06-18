@@ -63,8 +63,7 @@ General
 store/AddToCartBtn
     - separate subscription stuff
     - move brokered product config to settings
-store/BSPSignupForm
-    - move to subscription module
+subscription/SignUpForm
     - move plan config to database
 store/MyAccount - move into uac module and move the tab definitions into the app config
 store/ProductEditor - move subscription fields to subscription module and include via plugins

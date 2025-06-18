@@ -32,6 +32,8 @@
       "@common-shared/*": ["src/common-shared/*"],
       "@store/*": ["src/store/*"],
       "@store-shared/*": ["src/store-shared/*"],
+      "@subscription/*": ["src/subscription/*"],
+      "@subscription-shared/*": ["src/subscription-shared/*"],
       "@styles/*": ["styles/*"],
       "@config": ["src/config"]
     }
