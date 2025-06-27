@@ -57,7 +57,6 @@ init-db - make one init migration
 UI Code Generalizing Details
 =============================
 General
-    - make subscription modules
     - add permission checks around all components
     - add feature toggles in settings
 store/AddToCartBtn
@@ -65,13 +64,14 @@ store/AddToCartBtn
     - move brokered product config to settings
 subscription/SignUpForm
     - move plan config to database
-store/MyAccount - move into uac module and move the tab definitions into the app config
+store/MyAccount - move into uac module and move the tab definitions into plugins
 store/ProductEditor - move subscription fields to subscription module and include via plugins
 store/ProductMediaEditor - get imgHost from settings
 store/ProductScroller - move to common module and make it configurable
 store/SubscriptionEditor - move to subscription module
 store/product/columns
     - move subscription column to subscription module and include via plugins
+        - need a columnSet plugin type
     - move brokered products config to settings
 store/routes - move BSP route to public module
 store/useProductList - move default SKU to settings
