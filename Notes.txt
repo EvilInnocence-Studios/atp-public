@@ -1,3 +1,7 @@
+Bugs
+====
+clicking on related product does not update the related product list
+
 Phase 2
 =======
 Coding/Bugs
@@ -32,8 +36,6 @@ package.json
     - change project name
 _data - remove
 scripts - audit and/or remove import scripts
-general
-    - make subscription module
 common/migrations
     - remove EI site data
     - handle common permissions
@@ -56,14 +58,16 @@ init-db - make one init migration
 
 UI Code Generalizing Details
 =============================
+
+Move core-shared/module back to core and remove module definitions from shared modules
+
+
 General
     - add permission checks around all components
     - add feature toggles in settings
 store/AddToCartBtn
     - separate subscription stuff
     - move brokered product config to settings
-subscription/SignUpForm
-    - move plan config to database
 store/MyAccount - move into uac module and move the tab definitions into plugins
 store/ProductEditor - move subscription fields to subscription module and include via plugins
 store/ProductMediaEditor - get imgHost from settings
