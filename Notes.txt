@@ -58,13 +58,6 @@ init-db - make one init migration
 
 UI Code Generalizing Details
 =============================
-
-Move core-shared/module back to core and remove module definitions from shared modules
-
-
-General
-    - add permission checks around all components
-    - add feature toggles in settings
 store/AddToCartBtn
     - separate subscription stuff
     - move brokered product config to settings
@@ -83,7 +76,9 @@ store/useSearch - move defaults to settings
 uac/LoginForm
     - move logo alt to settings
     - remove new site alert
-config.local - move api host into .env
+General
+    - add permission checks around all components
+    - add feature toggles in settings
 
 
 

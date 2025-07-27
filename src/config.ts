@@ -6,6 +6,7 @@ import { module as commonModule } from "@common/index";
 import { module as publicModule } from "@public/index";
 import { module as storeModule } from "@store/index";
 import { module as subscriptionsModule } from "@subscription/index";
+import { module as subcriptionProductsPlugin} from "@subscription-products-plugin/index";
 import { module as uacModule } from "@uac/index";
 
 // List the modules you want active here
@@ -14,6 +15,7 @@ const modules = [
     commonModule,
     uacModule,
     subscriptionsModule,
+    subcriptionProductsPlugin,
     storeModule,
 ];
 

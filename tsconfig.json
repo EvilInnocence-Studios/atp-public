@@ -15,6 +15,7 @@
       "@store-shared/*": ["src/store-shared/*"],
       "@subscription/*": ["src/subscription/*"],
       "@subscription-shared/*": ["src/subscription-shared/*"],
+      "@subscription-products-plugin/*": ["src/subscription-products-plugin/*"],
       "@styles/*": ["styles/*"],
       "@config": ["src/config"]
     }
