@@ -56,6 +56,11 @@ uac/user
     - service: move email config to settings
 init-db - make one init migration
 
+To Test Next Go live
+====================
+Subscription list on sign up forms
+Add to cart buttons for subscription, regular, and brokered products
+
 UI Code Generalizing Details
 =============================
 store/MyAccount - move into uac module and move the tab definitions into plugins
