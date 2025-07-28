@@ -2,6 +2,8 @@
     "public":                       { "repo": "atp-public-core",                  "branch": "main" },
     "core":                         { "repo": "atp-core-ui",                      "branch": "main" },
     "core-shared":                  { "repo": "atp-core-shared",                  "branch": "main" },
+
+    "brokered-products-plugin":     { "repo": "atp-brokered-products-plugin",     "branch": "main" },
     "common":                       { "repo": "atp-common-ui",                    "branch": "main" },
     "common-shared":                { "repo": "atp-common-shared",                "branch": "main" },
     "store":                        { "repo": "atp-store-ui",                     "branch": "main" },

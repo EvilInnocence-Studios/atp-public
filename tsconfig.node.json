@@ -27,6 +27,7 @@
       "@uac/*": ["src/uac/*"],
       "@uac-shared/*": ["src/uac-shared/*"],
       "@core-shared/*": ["src/core-shared/*"],
+      "@brokered-products-plugin/*": ["src/brokered-products-plugin/*"],
       "@common-shared/*": ["src/common-shared/*"],
       "@store/*": ["src/store/*"],
       "@store-shared/*": ["src/store-shared/*"],

@@ -58,13 +58,7 @@ init-db - make one init migration
 
 UI Code Generalizing Details
 =============================
-store/AddToCartBtn
-    - separate subscription stuff
-    - move brokered product config to settings
 store/MyAccount - move into uac module and move the tab definitions into plugins
-store/ProductEditor - move subscription fields to subscription module and include via plugins
-store/ProductMediaEditor - get imgHost from settings
-store/ProductScroller - move to common module and make it configurable
 store/SubscriptionEditor - move to subscription module
 store/product/columns
     - move subscription column to subscription module and include via plugins
@@ -76,10 +70,13 @@ store/useSearch - move defaults to settings
 uac/LoginForm
     - move logo alt to settings
     - remove new site alert
+store/ProductMediaEditor - get imgHost from settings
+store/ProductScroller - move to common module and make it configurable
 General
     - add permission checks around all components
     - add feature toggles in settings
-
+brokered-products-plugin/BrokeredProductButton
+    - move link definitions into db (settings or new table)
 
 
 Sites Server Locations

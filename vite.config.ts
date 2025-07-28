@@ -20,6 +20,7 @@ export default defineConfig({
       '@subscription': path.resolve(__dirname, 'src/subscription'),
       '@subscription-shared': path.resolve(__dirname, 'src/subscription-shared'),
       '@subscription-products-plugin': path.resolve(__dirname, 'src/subscription-products-plugin'),
+      '@brokered-products-plugin': path.resolve(__dirname, 'src/brokered-products-plugin'),
       '@styles': path.resolve(__dirname, 'styles'),
       '@config': path.resolve(__dirname, 'src/config'),
     },
