@@ -63,6 +63,11 @@ Add to cart buttons for subscription, regular, and brokered products
 
 UI Code Generalizing Details
 =============================
+plugins
+    - need separation between admin and public(?)
+store/ProductEditor
+    - move brokered fields into brokered products plugin
+        - prereq: move all fields there to store plugins
 store/MyAccount - move into uac module and move the tab definitions into plugins
 store/SubscriptionEditor - move to subscription module
 store/product/columns
