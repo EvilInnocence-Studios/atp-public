@@ -4,26 +4,102 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@public/*": ["src/public/*"],
-      "@core/*": ["src/core/*"],
-      "@common/*": ["src/common/*"],
-      "@uac/*": ["src/uac/*"],
-      "@uac-shared/*": ["src/uac-shared/*"],
-      "@core-shared/*": ["src/core-shared/*"],
-      "@brokered-products-plugin/*": ["src/brokered-products-plugin/*"],
-      "@common-shared/*": ["src/common-shared/*"],
-      "@store/*": ["src/store/*"],
-      "@store-shared/*": ["src/store-shared/*"],
-      "@subscription/*": ["src/subscription/*"],
-      "@subscription-shared/*": ["src/subscription-shared/*"],
-      "@subscription-products-plugin/*": ["src/subscription-products-plugin/*"],
-      "@styles/*": ["styles/*"],
-      "@config": ["src/config"]
+      "@public/*": [
+        "src/public/*"
+      ],
+      "@core/*": [
+        "src/core/*"
+      ],
+      "@common/*": [
+        "src/common/*"
+      ],
+      "@uac/*": [
+        "src/uac/*"
+      ],
+      "@uac-shared/*": [
+        "src/uac-shared/*"
+      ],
+      "@core-shared/*": [
+        "src/core-shared/*"
+      ],
+      "@brokered-products-plugin/*": [
+        "src/brokered-products-plugin/*"
+      ],
+      "@common-shared/*": [
+        "src/common-shared/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@store-shared/*": [
+        "src/store-shared/*"
+      ],
+      "@subscription/*": [
+        "src/subscription/*"
+      ],
+      "@subscription-shared/*": [
+        "src/subscription-shared/*"
+      ],
+      "@subscription-products-plugin/*": [
+        "src/subscription-products-plugin/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@config": [
+        "src/config"
+      ],
+      "@brokered-products-plugin": [
+        "src/brokered-products-plugin"
+      ],
+      "@common": [
+        "src/common"
+      ],
+      "@common-shared": [
+        "src/common-shared"
+      ],
+      "@core": [
+        "src/core"
+      ],
+      "@core-shared": [
+        "src/core-shared"
+      ],
+      "@public": [
+        "src/public"
+      ],
+      "@store": [
+        "src/store"
+      ],
+      "@store-shared": [
+        "src/store-shared"
+      ],
+      "@subscription": [
+        "src/subscription"
+      ],
+      "@subscription-products-plugin": [
+        "src/subscription-products-plugin"
+      ],
+      "@subscription-shared": [
+        "src/subscription-shared"
+      ],
+      "@uac": [
+        "src/uac"
+      ],
+      "@uac-shared": [
+        "src/uac-shared"
+      ],
+      "@styles": [
+        "styles/*"
+      ]
     }
   },
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
   ]
 }

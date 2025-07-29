@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "status": "node ./src/core-shared/scripts/status.mjs",
     "setup": "ts-node ./scripts/import.ts",
-    "install-custom": "node ./scripts/install-custom.js"
+    "install-custom": "node ./scripts/install-custom.js && yarn update-aliases",
+    "update-aliases": "node ./scripts/update-aliases.js"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
