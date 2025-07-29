@@ -16,6 +16,7 @@ const updateTsConfigAliases = (file) => {
     const aliases = tsConfig.compilerOptions.paths || {};
     directories.forEach(dir => {
         aliases[`@${dir}`] = [`src/${dir}`];
+        aliases[`@${dir}/*`] = [`src/${dir}/*`];
     });
     
     // Add specific aliases for shared directories and styles
