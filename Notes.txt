@@ -55,38 +55,41 @@ uac/user
     - move subscription endpoints to subscription module
     - service: move email config to settings
 init-db - make one init migration
+move all plugin fields to proper module migrations
+    - user subscription fields -> subscription
+    - subscriptionONly product fields -> subscription-products-plugin
+    - brokered* product fields -> brokered-products-plugin
 
 To Test Next Go live
 ====================
 Subscription list on sign up forms
 Add to cart buttons for subscription, regular, and brokered products
+My account tabs
+Product editor details
+Product manager columns
 
 UI Code Generalizing Details
 =============================
-plugins
-    - need separation between admin and public(?)
-store/ProductEditor
-    - move brokered fields into brokered products plugin
-        - prereq: move all fields there to store plugins
-store/MyAccount - move into uac module and move the tab definitions into plugins
-store/SubscriptionEditor - move to subscription module
-store/product/columns
-    - move subscription column to subscription module and include via plugins
-        - need a columnSet plugin type
+brokered-products-plugin/lib/productManagerColumns
     - move brokered products config to settings
-store/routes - move BSP route to public module
+
+brokered-products-plugin/BrokeredProductButton
+    - move link definitions into db (settings or new table)
+
 store/useProductList - move default SKU to settings
 store/useSearch - move defaults to settings
 uac/LoginForm
     - move logo alt to settings
     - remove new site alert
 store/ProductMediaEditor - get imgHost from settings
+
 store/ProductScroller - move to common module and make it configurable
+
 General
     - add permission checks around all components
     - add feature toggles in settings
-brokered-products-plugin/BrokeredProductButton
-    - move link definitions into db (settings or new table)
+    
+make config() async so that we can dynamically load modules in makeConfig()
 
 
 Sites Server Locations
