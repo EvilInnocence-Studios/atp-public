@@ -43,7 +43,12 @@ core/paypal - get client id from settings
 core/s3Uploads - move bucket and region to settings
 core/sendEmail - get region from settings
 store/orderConfirmation - move copy template into settings
-store/migrations - audit all migrations, remove EI site data, and handle store permissions
+store/migrations
+    - audit all migrations, remove EI site data, and handle store permissions
+    - make pluggable system for defining migrations
+        - modules should register available migrations
+        - help command should list available migrations
+        - init-db script should have a menu for choosing migrations
 store/order/service
     - move cart endpoints to cart dir
     - move subscription stuff to subscription module and include via plugins
@@ -67,21 +72,16 @@ Add to cart buttons for subscription, regular, and brokered products
 My account tabs
 Product editor details
 Product manager columns
+Default SKU
+Default product search
+Login form
 
 UI Code Generalizing Details
 =============================
 brokered-products-plugin/lib/productManagerColumns
-    - move brokered products config to settings
-
 brokered-products-plugin/BrokeredProductButton
-    - move link definitions into db (settings or new table)
-
-store/useProductList - move default SKU to settings
-store/useSearch - move defaults to settings
-uac/LoginForm
-    - move logo alt to settings
-    - remove new site alert
-store/ProductMediaEditor - get imgHost from settings
+    - move brokered products config to database table
+    - move link definitions into db table
 
 store/ProductScroller - move to common module and make it configurable
 
