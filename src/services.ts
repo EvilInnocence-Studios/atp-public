@@ -1,3 +1,4 @@
+import { brokerageServices } from "@brokered-products-plugin/lib/services";
 import { commonServices } from "@common/lib/services";
 import { IMethods } from "@core/lib/types";
 import { storeServices } from "@store/services";
@@ -9,4 +10,5 @@ export const apiServices = (methods:IMethods) => ({
     ...uacServices(methods),
     ...storeServices(methods),
     ...subscriptionServices(methods),
+    ...brokerageServices(methods),
 });

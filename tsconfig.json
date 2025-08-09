@@ -90,6 +90,12 @@
       ],
       "@styles": [
         "styles/*"
+      ],
+      "@brokered-products-plugin-shared": [
+        "src/brokered-products-plugin-shared"
+      ],
+      "@brokered-products-plugin-shared/*": [
+        "src/brokered-products-plugin-shared/*"
       ]
     }
   },

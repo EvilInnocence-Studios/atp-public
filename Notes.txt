@@ -78,13 +78,6 @@ Login form
 
 UI Code Generalizing Details
 =============================
-brokered-products-plugin/lib/productManagerColumns
-brokered-products-plugin/BrokeredProductButton
-    - move brokered products config to database table
-    - move link definitions into db table
-
-store/ProductScroller - move to common module and make it configurable
-
 General
     - add permission checks around all components
     - add feature toggles in settings
