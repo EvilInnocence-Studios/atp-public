@@ -20,6 +20,12 @@ $cms-width: 1024px;
 
 $text-default: 16px;
 
+@mixin contentBlock {
+    max-width: $cms-width;
+    margin: $padding auto;
+    font-size: $text-default;
+}
+
 @mixin cmsPage {
     max-width: $cms-width;
     margin: $padding auto;

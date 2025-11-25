@@ -20,6 +20,7 @@
     "update-aliases": "node ./scripts/update-aliases.js"
   },
   "dependencies": {
+    "@atproto/api": "^0.17.4",
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
@@ -27,21 +28,29 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mdxeditor/editor": "^3.42.0",
     "@paypal/react-paypal-js": "^8.7.0",
     "@uiw/react-md-editor": "^4.0.5",
     "antd": "^5.22.4",
+    "bluesky-embed-react": "^0.0.9",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
+    "gpu.js": "^2.16.0",
+    "hls.js": "^1.6.13",
     "lodash": "^4.17.21",
     "marked-react": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-favicon": "^2.0.7",
+    "react-flicker": "^1.1.1",
     "react-mailchimp-form": "^1.0.2",
     "react-router": "^7.0.2",
     "react-router-dom": "^7.0.2",
+    "remark-directive": "^4.0.0",
+    "remark-directive-sugar": "^1.1.2",
     "superagent": "^10.1.1",
     "ts-functional": "^1.20.2",
-    "unstateless": "^1.1.1"
+    "unstateless": "^1.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
