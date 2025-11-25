@@ -3,8 +3,16 @@ import path from 'path';
 
 // Update the tsconfig.json file to include aliases for the directories in the src directory
 const updateTsConfigAliases = (file) => {
+    const baseFile = file.replace('.json', '.base.json');
+    const baseConfigPath = path.resolve(".", baseFile);
     const tsConfigPath = path.resolve(".", file);
-    const tsConfig = JSON.parse(fs.readFileSync(tsConfigPath, 'utf-8'));
+
+    if (!fs.existsSync(baseConfigPath)) {
+        console.warn(`Base file not found: ${baseFile}. Skipping...`);
+        return;
+    }
+
+    const tsConfig = JSON.parse(fs.readFileSync(baseConfigPath, 'utf-8'));
     
     // Dynamically generate the alias paths based on the directories in the src folder
     const srcDir = path.resolve(".", 'src');
