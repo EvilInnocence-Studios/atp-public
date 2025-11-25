@@ -18,8 +18,8 @@ const toCamelCase = (str) => {
     return str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
 };
 
-const imports = modules.map(module => `import { module as ${toCamelCase(module)} } from "./${module}";`).join('\n');
-const exports = `export const modules = [\n    ${modules.map(module => toCamelCase(module)).join(',\n    ')}\n];`;
+const imports = modules.map(module => `import { module as ${toCamelCase(module)}Module } from "./${module}";`).join('\n');
+const exports = `export const modules = [\n    ${modules.map(module => toCamelCase(module) + 'Module').join(',\n    ')}\n];`;
 
 const content = `import { makeConfig } from "@core/lib/makeConfig";
 import {localConfig} from "./config.local";
