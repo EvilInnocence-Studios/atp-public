@@ -1,21 +1,66 @@
 {
-    "public":                          { "repo": "atp-public-core",                     "branch": "main" },
-    "core":                            { "repo": "atp-core-ui",                         "branch": "main" },
-    "core-shared":                     { "repo": "atp-core-shared",                     "branch": "main" },
-    "uac":                             { "repo": "atp-uac-ui",                          "branch": "main" },
-    "uac-shared":                      { "repo": "atp-uac-shared",                      "branch": "main" },
-    "common":                          { "repo": "atp-common-ui",                       "branch": "main" },
-    "common-shared":                   { "repo": "atp-common-shared",                   "branch": "main" },
-    "store":                           { "repo": "atp-store-ui",                        "branch": "main" },
-    "store-shared":                    { "repo": "atp-store-shared",                    "branch": "main" },
-    "subscription":                    { "repo": "atp-subscription-ui",                 "branch": "main" },
-    "subscription-shared":             { "repo": "atp-subscription-shared",             "branch": "main" },
-    "comic":                           { "repo": "atp-comic-ui",                        "branch": "main" },
-    "comic-shared":                    { "repo": "atp-comic-shared",                    "branch": "main" },
-
-    "brokered-products-plugin":        { "repo": "atp-brokered-products-plugin-ui",     "branch": "main" },
-    "brokered-products-plugin-shared": { "repo": "atp-brokered-products-plugin-shared", "branch": "main" },
-    "donation-products-plugin":        { "repo": "atp-donation-products-plugin-ui",     "branch": "main" },
-    "donation-products-plugin-shared": { "repo": "atp-donation-products-plugin-shared", "branch": "main" },
-    "subscription-products-plugin":    { "repo": "atp-subscription-products-plugin-ui", "branch": "main" }
+    "core": {
+        "repo": "atp-core-ui",
+        "branch": "main"
+    },
+    "core-shared": {
+        "repo": "atp-core-shared",
+        "branch": "main"
+    },
+    "common": {
+        "repo": "atp-common-ui",
+        "branch": "main"
+    },
+    "common-shared": {
+        "repo": "atp-common-shared",
+        "branch": "main"
+    },
+    "uac": {
+        "repo": "atp-uac-ui",
+        "branch": "main"
+    },
+    "uac-shared": {
+        "repo": "atp-uac-shared",
+        "branch": "main"
+    },
+    "theming": {
+        "repo": "atp-theming-ui",
+        "branch": "main"
+    },
+    "public": {
+        "repo": "atp-public-core",
+        "branch": "main"
+    },
+    "store": {
+        "repo": "atp-store-ui",
+        "branch": "main"
+    },
+    "store-shared": {
+        "repo": "atp-store-shared",
+        "branch": "main"
+    },
+    "brokered-products-plugin": {
+        "repo": "atp-brokered-products-plugin-ui",
+        "branch": "main"
+    },
+    "brokered-products-plugin-shared": {
+        "repo": "atp-brokered-products-plugin-shared",
+        "branch": "main"
+    },
+    "donation-products-plugin": {
+        "repo": "atp-donation-products-plugin-ui",
+        "branch": "main"
+    },
+    "donation-products-plugin-shared": {
+        "repo": "atp-donation-products-plugin-shared",
+        "branch": "main"
+    },
+    "comic": {
+        "repo": "atp-comic-ui",
+        "branch": "main"
+    },
+    "comic-shared": {
+        "repo": "atp-comic-shared",
+        "branch": "main"
+    }
 }
