@@ -6,14 +6,14 @@
   "scripts": {
     "dev": "clear && vite --host",
     "deploy": "clear && yarn build && yarn deploy-only && yarn refresh",
-    "cloudfront": "ts-node ./src/core-shared/cloudfront.ts",
+    "cloudfront": "node --loader ts-node/esm --no-warnings ./src/core-shared/cloudfront.ts",
     "build": "tsc -b && vite build",
     "deploy-only": "node ./scripts/deploy-only.js",
     "refresh": "node ./scripts/refresh.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "status": "node ./src/core-shared/scripts/status.mjs",
-    "setup": "ts-node ./scripts/import.ts",
+    "setup": "ts-node-esm ./scripts/import.ts",
     "install-custom": "node ./scripts/install-custom.js && yarn update-overrides && yarn update-aliases && node ./scripts/generate-config.js && node ./scripts/generate-services.js",
     "generate-config": "node ./scripts/generate-config.js",
     "generate-services": "node ./scripts/generate-services.js",
@@ -54,6 +54,9 @@
     "unstateless": "^1.2.1"
   },
   "devDependencies": {
+    "@aws-sdk/client-acm": "^3.993.0",
+    "@aws-sdk/client-cloudfront": "^3.993.0",
+    "@aws-sdk/credential-providers": "^3.993.0",
     "@eslint/js": "^9.15.0",
     "@types/lodash": "^4.17.13",
     "@types/node": "^22.10.0",
