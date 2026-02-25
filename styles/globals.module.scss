@@ -1,46 +1,28 @@
-$brand-primary: #4492ae;
-$brand-secondary: #8f9fb8;
-$brand-border: #4e5e6f;
-$brand-bg: #1a212b;
-$brand-bg-light: #2c333d;
-$brand-text: $brand-secondary;
-
-$warning: #f0ad4e;
-$changed: #333300;
-
-$border-radius: 4px;
-$border-radius-lg: 8px;
-
-$padding-lg: 32px;
-$padding: 16px;
-$padding-sm: 8px;
-$padding-xs: 4px;
-
-$cms-width: 1024px;
-
-$text-default: 16px;
-
 @mixin contentBlock {
-    max-width: $cms-width;
-    margin: $padding auto;
-    font-size: $text-default;
+    border: solid 10px var(--borderColor);
+    background-color: var(--bgLightColor);
+    border-radius: var(--borderRadius);
+    h1 {
+        background-color: var(--bgColor);
+        padding: var(--padding);
+        margin: -16px -16px 16px -16px;
+    }
 }
 
 @mixin cmsPage {
-    max-width: $cms-width;
-    margin: $padding auto;
-    font-size: $text-default;
-    background-color: $brand-bg-light;
-    padding: $padding;
+    max-width: var(--cmsWidth);
+    margin: var(--padding) auto;
+    font-size: var(--textSizeDefault);
+    padding: var(--padding);
     h3 {
-        border-bottom: dashed 1px $brand-border;
+        border-bottom: dashed 1px var(--borderColor);
     }
     li {
-        margin-top: $padding-sm;
+        margin-top: var(--paddingSmall);
     }
     img {
         display: block;
-        margin: $padding-sm auto;
+        margin: var(--paddingSmall) auto;
         max-width: 100%;
     }
     iframe {
@@ -48,13 +30,13 @@ $text-default: 16px;
         aspect-ratio: 16 / 9;
     }
     p {
-        margin-bottom: $padding;
+        margin-bottom: var(--padding);
     }
 }
 
 @mixin infoBlock {
     div, h2 {
-        max-width: $cms-width;
+        max-width: var(--cmsWidth);
         margin: auto;
     }
 }
@@ -62,18 +44,18 @@ $text-default: 16px;
 $animationLength: 0.5s;
 
 @mixin splashButtonLink {
-    background-color: $brand-primary;
+    background-color: var(--primaryColor);
     color: #ffffff;
-    border: 4px solid $brand-primary;
-    border-radius: $border-radius * 2;
-    padding: $padding-sm $padding;
-    font-size: $text-default;
+    border: 4px solid var(--primaryColor);
+    border-radius: var(--borderRadiusLarge);
+    padding: var(--paddingSmall) var(--padding);
+    font-size: var(--textSizeDefault);
     font-weight: bold;
     cursor: pointer;
     transition: background-color $animationLength ease, color $animationLength ease, border $animationLength ease;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     &:hover {
-        background-color: $brand-bg;
+        background-color: var(--bgColor);
         transition: background-color $animationLength ease, color $animationLength ease, border $animationLength ease;
     }
 }
@@ -82,19 +64,4 @@ $animationLength: 0.5s;
     a {
         @include splashButtonLink;
     }
-}
-
-:export {
-    brandPrimary: $brand-primary;
-    brandSecondary: $brand-secondary;
-    brandBorder: $brand-border;
-    brandBg: $brand-bg;
-    brandBgLight: $brand-bg-light;
-    brandText: $brand-text;
-
-    borderRadius: $border-radius;
-    borderRadiusLg: $border-radius-lg;
-
-    padding: $padding;
-    paddingSm: $padding-sm;
 }
