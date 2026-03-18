@@ -71,6 +71,10 @@
         "repo": "atp-comic-shared",
         "branch": "main"
     },
+    "comicad": {
+        "repo": "atp-comicad-ui",
+        "branch": "main"
+    },
     "darkwynd": {
         "repo": "atp-theme-darkwynd",
         "branch": "main"
