@@ -28,7 +28,7 @@ ${imports}
 
 ${exports}
 
-export const config = makeConfig(localConfig.api.baseUrl, modules, "public");
+export const config = makeConfig(localConfig.public.baseUrl, localConfig.api.baseUrl, modules, "public");
 `;
 
 fs.writeFileSync(outputFile, content);

@@ -43,60 +43,12 @@
         "repo": "atp-public-core",
         "branch": "main"
     },
-    "store": {
-        "repo": "atp-store-ui",
-        "branch": "main"
-    },
-    "store-shared": {
-        "repo": "atp-store-shared",
-        "branch": "main"
-    },
     "gallery": {
         "repo": "atp-gallery-ui",
         "branch": "main"
     },
     "gallery-shared": {
         "repo": "atp-gallery-shared",
-        "branch": "main"
-    },
-    "brokered-products-plugin": {
-        "repo": "atp-brokered-products-plugin-ui",
-        "branch": "main"
-    },
-    "brokered-products-plugin-shared": {
-        "repo": "atp-brokered-products-plugin-shared",
-        "branch": "main"
-    },
-    "donation-products-plugin": {
-        "repo": "atp-donation-products-plugin-ui",
-        "branch": "main"
-    },
-    "donation-products-plugin-shared": {
-        "repo": "atp-donation-products-plugin-shared",
-        "branch": "main"
-    },
-    "subscription-products-plugin": {
-        "repo": "atp-subscription-products-plugin-ui",
-        "branch": "main"
-    },
-    "subscription": {
-        "repo": "atp-subscription-ui",
-        "branch": "main"
-    },
-    "subscription-shared": {
-        "repo": "atp-subscription-shared",
-        "branch": "main"
-    },
-    "comic": {
-        "repo": "atp-comic-ui",
-        "branch": "main"
-    },
-    "comic-shared": {
-        "repo": "atp-comic-shared",
-        "branch": "main"
-    },
-    "comicad": {
-        "repo": "atp-comicad-ui",
         "branch": "main"
     }
 }
